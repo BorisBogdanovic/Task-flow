@@ -1,0 +1,804 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-[#131625] font-body p-0 m-0 ">
+<!--    NAVIGATION-->
+<nav class="flex justify-between items-center relative pt-[30px] container mx-auto px-5">
+    <div class="relative z-[999999]">
+        <a href="#" class="font-extrabold text-white text-[40px]">
+            TaskFlow
+        </a>
+    </div>
+    <div id="menu"
+         class="flex flex-col lg:flex-row fixed lg:static inset-0 lg:inset-auto bg-gradient-to-r from-[#178AAD] to-[#51B599] lg:items-center lg:bg-transparent lg:from-transparent lg:to-transparent justify-center items-center lg:justify-start lg:items-start hidden lg:flex z-[999999]">
+        <div class="text-white cursor-pointer text-base leading-6 mb-6 lg:mb-0 lg:ml-10 nav-link" href="#section--1">Why
+            TaskFlow?
+        </div>
+        <div class="text-white cursor-pointer text-base leading-6 mb-6 lg:mb-0 lg:ml-10 nav-link" href="#section--2">How
+            it Works
+        </div>
+        <div class="text-white cursor-pointer text-base leading-6 mb-6 lg:mb-0 lg:ml-10 nav-link" href="#section--3">Our
+            Team
+        </div>
+        <div class="text-white cursor-pointer text-base leading-6 mb-6 lg:mb-0  lg:ml-10 nav-link" href="#section--4">
+            Investors
+        </div>
+        <div class="text-white cursor-pointer text-base leading-6 mb-6 lg:mb-0 lg:ml-10 nav-link" href="#section--5">
+            About Us
+        </div>
+        <div class="relative lg:ml-10">
+            <button class="nav-link hidden lg:block relative z-[10] px-8 py-3 border-none rounded  bg-gradient-to-r from-[#178AAD] to-[#51B599] transition duration-500 ease-in-out font-semibold text-white cursor-pointer  hover:btn-hover-gradient"
+                    href="#section--6">
+                Contact Us
+            </button>
+            <div class="bg-gradient-to-r from-[#178AAD] to-[#51B599] w-[145px] h-[50px] absolute z-[9] top-0 left-0 rounded-sm filter blur-[50px]">
+
+            </div>
+        </div>
+
+        <button class="block lg:hidden px-8 py-3 border-none rounded  bg-[#164F78] font-semibold text-white cursor-pointer "
+                href="#section--6">
+            Contact Us
+        </button>
+
+    </div>
+    <div id="hamburger"
+         class="p-2 rounded bg-gradient-to-r from-[#51B599] to-[#178AAD] block lg:hidden cursor-pointer relative z-[999999]">
+        <img src="img/menu.png" alt="hamburger-icon">
+    </div>
+</nav>
+<!--    HERO SECTION-->
+<div class="block md:flex  mt-[120px] container mx-auto px-5 ">
+    <div class="md:w-1/2 w-[100%]">
+        <div class="flex flex-wrap lg:text-[71px] lg:leading-[80px] xl:text-[95px] xl:leading-[100px]  sm:text-[61px] sm:leading-[61px] text-[54px] leading-[54px] ">
+            <span class="text-white font-bold  inline-block opacity-0 translate-y-[50px] animate-slide-up whitespace-nowrap mr-[20px]">The</span>
+            <span class="text-white font-bold inline-block opacity-0 translate-y-[50px] animate-slide-up whitespace-nowrap mr-[20px]">Next</span>
+            <span class="text-white font-bold inline-block opacity-0 translate-y-[50px] animate-slide-up whitespace-nowrap mr-[20px]">Generation</span>
+            <span class="text-white font-bold inline-block opacity-0 translate-y-[50px] animate-slide-up whitespace-nowrap mr-[20px]">of</span>
+            <span class="text-white font-bold inline-block opacity-0 translate-y-[50px] animate-slide-up whitespace-nowrap mr-[20px]">Task</span>
+            <span class="text-white font-bold inline-block opacity-0 translate-y-[50px] animate-slide-up whitespace-nowrap mr-[20px]">Planning</span>
+        </div>
+        <div class="text-white mt-8 text-[18px] leading-[28px]">
+            Optimize your task management with personalized insights and streamlined tracking.
+        </div>
+        <div class="mt-8 relative flex items-center gap-8 z-[5]">
+            <button class="relative z-[5] cursor-pointer px-8 py-3 w-[200px] border-none rounded bg-gradient-to-r from-[#51B599] to-[#178AAD] transition duration-500 ease-in-out font-semibold text-white cursor-pointer hover:btn-hover-gradient"
+                    href="#section--5" id="hero-btn">
+                Read More
+            </button>
+            <img src="img/app.png" alt="app-logo" draggable="false">
+            <img src="img/google-play.png" alt="google-play-logo" draggable="false">
+            <div class="absolute z-[1] top-0 left-0 w-[200px] h-[48px] bg-gradient-to-br from-[#51B599] to-[#178AAD] rounded-sm filter blur-[50px]">
+            </div>
+
+        </div>
+    </div>
+    <div class=" relative hidden sm:block sm:h-[50vh] xl:hidden"><img src="img/tablet-img.png" alt=""></div>
+    <div class="w-1/2 relative  h-[600px] hidden xl:block">
+        <div class="w-[512px] h-[512px] bg-gradient-to-br from-[#178AAD] to-[#51B599] opacity-0 absolute rounded-full blur-[50px] transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 animate-bgGradient"></div>
+        <div class="animate-combined bg-gradient-to-br from-[#4AC2E2] to-[#178AAD] rounded-[30%] flex justify-center items-center w-[110px] h-[117px] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] opacity-0 shadow-[41.4629px_-16px_108.84px_rgba(81,181,153,0.51),_-55.7157px_-10px_101.066px_rgba(23,138,173,0.42),_inset_0_-7.77429px_18.14px_rgba(0,45,78,0.21),_inset_0_7.77429px_18.14px_rgba(0,17,41,0.2)]">
+            <svg class="text-gray-800 dark:text-white w-12 h-12" aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="50" height="50" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M12 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-2.952.462c-.483.19-.868.432-1.19.71-.363.315-.638.677-.831.93l-.106.14c-.21.268-.36.418-.574.527C6.125 6.883 5.74 7 5 7a1 1 0 0 0 0 2c.364 0 .696-.022 1-.067v.41l-1.864 4.2a1.774 1.774 0 0 0 .821 2.255c.255.133.538.202.825.202h2.436a1.786 1.786 0 0 0 1.768-1.558 1.774 1.774 0 0 0-.122-.899L8 9.343V8.028c.2-.188.36-.38.495-.553.062-.079.118-.15.168-.217.185-.24.311-.406.503-.571a1.89 1.89 0 0 1 .24-.177A3.01 3.01 0 0 0 11 7.829V20H5.5a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2H13V7.83a3.01 3.01 0 0 0 1.63-1.387c.206.091.373.19.514.29.31.219.532.465.811.78l.025.027.02.023v1.78l-1.864 4.2a1.774 1.774 0 0 0 .821 2.255c.255.133.538.202.825.202h2.436a1.785 1.785 0 0 0 1.768-1.558 1.773 1.773 0 0 0-.122-.899L18 9.343v-.452c.302.072.633.109 1 .109a1 1 0 1 0 0-2c-.48 0-.731-.098-.899-.2-.2-.12-.363-.293-.651-.617l-.024-.026c-.267-.3-.622-.7-1.127-1.057a5.152 5.152 0 0 0-1.355-.678 3.001 3.001 0 0 0-5.896.04Z"
+                      clip-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="animate-square2 bg-[#D1D5DB] absolute top-1/2 left-1/2 transform rotate-[5deg] -translate-x-1/2 -translate-y-1/2 rounded-[30%] shadow-[inset_0_-3.5px_8.18px_rgba(0,45,78,0.21),inset_0_3.5px_8.18px_rgba(0,17,41,0.2)] flex justify-center items-center opacity-0 z-5">
+            <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z"
+                      clip-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="flex items-center justify-center opacity-0 rotate-[-10deg] translate-x-[-50%] translate-y-[-50%] bg-gradient-to-r from-[#FFB800] to-[#FCB80A] rounded-[30%] absolute top-[50%] left-[50%] animate-square3"
+             style="box-shadow: inset 0px -2.63882px 6.15725px rgba(0, 45, 78, 0.21), inset 0px 2.63882px 6.15725px rgba(0, 17, 41, 0.2);">
+            <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z"
+                      clip-rule="evenodd"/>
+            </svg>
+
+        </div>
+        <div class="animate-combined2 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center opacity-0 bg-gradient-to-br from-[#178AAD] to-[#51B599] shadow-[inset_0_-5.81643px_13.5717px_rgba(0,45,78,0.21),_inset_0_5.81643px_13.5717px_rgba(0,17,41,0.2)] rounded-[30%]">
+            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M7.05 4.05A7 7 0 0 1 19 9c0 2.407-1.197 3.874-2.186 5.084l-.04.048C15.77 15.362 15 16.34 15 18a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1c0-1.612-.77-2.613-1.78-3.875l-.045-.056C6.193 12.842 5 11.352 5 9a7 7 0 0 1 2.05-4.95ZM9 21a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1Zm1.586-13.414A2 2 0 0 1 12 7a1 1 0 1 0 0-2 4 4 0 0 0-4 4 1 1 0 0 0 2 0 2 2 0 0 1 .586-1.414Z"
+                      clip-rule="evenodd"/>
+            </svg>
+
+        </div>
+        <div class="animate-combined3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center bg-gradient-to-r from-[#51B599] to-[#178AAD] rounded-[30%] opacity-0 shadow-[41.4629px_-16px_108.84px_rgba(81,181,153,0.51),-55.7157px_-10px_101.066px_rgba(23,138,173,0.42),inset_0_-7.77429px_18.14px_rgba(0,45,78,0.21),inset_0_7.77429px_18.14px_rgba(0,17,41,0.2)] z-5">
+
+            <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+                <path fill-rule="evenodd"
+                      d="M9.896 3.051a2.681 2.681 0 0 1 4.208 0c.147.186.38.282.615.255a2.681 2.681 0 0 1 2.976 2.975.681.681 0 0 0 .254.615 2.681 2.681 0 0 1 0 4.208.682.682 0 0 0-.254.615 2.681 2.681 0 0 1-2.976 2.976.681.681 0 0 0-.615.254 2.682 2.682 0 0 1-4.208 0 .681.681 0 0 0-.614-.255 2.681 2.681 0 0 1-2.976-2.975.681.681 0 0 0-.255-.615 2.681 2.681 0 0 1 0-4.208.681.681 0 0 0 .255-.615 2.681 2.681 0 0 1 2.976-2.975.681.681 0 0 0 .614-.255ZM12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+                      clip-rule="evenodd"/>
+                <path d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z"/>
+            </svg>
+
+        </div>
+        <div class="animate-combined4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center bg-gradient-to-r from-[#51B599] to-[#178AAD] rounded-[30%] opacity-0 shadow-[41.4629px_-16px_108.84px_rgba(81,181,153,0.51),-55.7157px_-10px_101.066px_rgba(23,138,173,0.42),inset_0_-7.77429px_18.14px_rgba(0,45,78,0.21),inset_0_7.77429px_18.14px_rgba(0,17,41,0.2)] z-[5]">
+            <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z"
+                      clip-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="animate-square7 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center bg-gray-300 rounded-[30%] opacity-0 shadow-[41.4629px_-16px_108.84px_rgba(81,181,153,0.51),-55.7157px_-10px_101.066px_rgba(23,138,173,0.42),inset_0_-7.77429px_18.14px_rgba(0,45,78,0.21),inset_0_7.77429px_18.14px_rgba(0,17,41,0.2)] z-1">
+            <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z"
+                      clip-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="animate-combined5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center bg-gray-300 rounded-[30%] opacity-0 shadow-[41.4629px_-16px_108.84px_rgba(81,181,153,0.51),-55.7157px_-10px_101.066px_rgba(23,138,173,0.42),inset_0_-7.77429px_18.14px_rgba(0,45,78,0.21),inset_0_7.77429px_18.14px_rgba(0,17,41,0.2)] z-[5]">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M7.05 4.05A7 7 0 0 1 19 9c0 2.407-1.197 3.874-2.186 5.084l-.04.048C15.77 15.362 15 16.34 15 18a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1c0-1.612-.77-2.613-1.78-3.875l-.045-.056C6.193 12.842 5 11.352 5 9a7 7 0 0 1 2.05-4.95ZM9 21a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1Zm1.586-13.414A2 2 0 0 1 12 7a1 1 0 1 0 0-2 4 4 0 0 0-4 4 1 1 0 0 0 2 0 2 2 0 0 1 .586-1.414Z"
+                      clip-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="animate-square9 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center bg-gradient-to-r from-[#FFB800] to-[#FCB80A] rounded-[30%] opacity-0 shadow-[41.4629px_-16px_108.84px_rgba(81,181,153,0.51),-55.7157px_-10px_101.066px_rgba(23,138,173,0.42),inset_0_-7.77429px_18.14px_rgba(0,45,78,0.21),inset_0_7.77429px_18.14px_rgba(0,17,41,0.2)] z-[5]">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
+                      clip-rule="evenodd"/>
+                <path fill-rule="evenodd"
+                      d="M8.023 17.215c.033-.03.066-.062.098-.094L10.243 15H15a3 3 0 0 0 3-3V8h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1v2a1 1 0 0 1-1.707.707L14.586 18H9a1 1 0 0 1-.977-.785Z"
+                      clip-rule="evenodd"/>
+            </svg>
+
+        </div>
+        <div class="animate-combined6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center rounded-[30%] opacity-0 shadow-[41.4629px_-16px_108.84px_rgba(81,181,153,0.51),-55.7157px_-10px_101.066px_rgba(23,138,173,0.42),inset_0_-7.77429px_18.14px_rgba(0,45,78,0.21),inset_0_7.77429px_18.14px_rgba(0,17,41,0.2)] z-5 bg-gradient-to-br from-[#178AAD] to-[#51B599]">
+            <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                      d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
+                      clip-rule="evenodd"/>
+                <path fill-rule="evenodd"
+                      d="M8.023 17.215c.033-.03.066-.062.098-.094L10.243 15H15a3 3 0 0 0 3-3V8h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1v2a1 1 0 0 1-1.707.707L14.586 18H9a1 1 0 0 1-.977-.785Z"
+                      clip-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="animate-combined7 absolute left-1/2 top-1/2 bg-gradient-to-r from-[#4AC2E2] to-[#178AAD] shadow-[41.4629px_-16px_108.84px_rgba(81,181,153,0.51),_-55.7157px_-10px_101.066px_rgba(23,138,173,0.42),_inset_0px_-7.77429px_18.14px_rgba(0,45,78,0.21),_inset_0px_7.77429px_18.14px_rgba(0,17,41,0.2)] transform-translate-x-1/2 transform-translate-y-1/2 rounded-[30%] w-0 h-0 opacity-0 z-1 flex justify-center items-center">
+
+            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 4v15a1 1 0 0 0 1 1h15M8 16l2.5-5.5 3 3L17.273 7 20 9.667"/>
+            </svg>
+
+        </div>
+        <div class="animate-square12 absolute left-1/2 top-1/2 bg-gradient-to-r from-[#4AC2E2] to-[#178AAD] transform-translate-x-1/2 transform-translate-y-1/2 rounded-[30%] w-0 h-0 opacity-0 z-5 flex justify-center items-center shadow-[29.6923px_-11.4579px_77.9424px_rgba(81,181,153,0.51),-39.8991px_-7.16118px_72.3751px_rgba(23,138,173,0.42)_inset_0px_-5.56731px_12.9904px_rgba(0,45,78,0.21)_inset_0px_5.56731px_12.9904px_rgba(0,17,41,0.2)]">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+                <path fill-rule="evenodd"
+                      d="M9.896 3.051a2.681 2.681 0 0 1 4.208 0c.147.186.38.282.615.255a2.681 2.681 0 0 1 2.976 2.975.681.681 0 0 0 .254.615 2.681 2.681 0 0 1 0 4.208.682.682 0 0 0-.254.615 2.681 2.681 0 0 1-2.976 2.976.681.681 0 0 0-.615.254 2.682 2.682 0 0 1-4.208 0 .681.681 0 0 0-.614-.255 2.681 2.681 0 0 1-2.976-2.975.681.681 0 0 0-.255-.615 2.681 2.681 0 0 1 0-4.208.681.681 0 0 0 .255-.615 2.681 2.681 0 0 1 2.976-2.975.681.681 0 0 0 .614-.255ZM12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+                      clip-rule="evenodd"/>
+                <path d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z"/>
+            </svg>
+
+        </div>
+        <div class=" animate-rotateBall absolute z-9 left-[-30%] top-0 w-[400px] h-[300px] opacity-0 ">
+            <img src="img/ball-1.png" alt="mini-ball">
+        </div>
+
+        <div class=" animate-rotateBall2 absolute z-9 left-[-30%] top-0 w-[400px] h-[400px] opacity-0">
+            <img src="img/ball-2.png" alt="mid-ball">
+        </div>
+        <div class=" animate-rotateBall3 absolute z-9 top-5 left-[-25%] w-[600px] h-[600px] opacity-0">
+            <img src="img/ball-3.png" alt="big-ball">
+        </div>
+    </div>
+</div>
+<!-- SECTION 2-->
+<section
+        class="relative  h-[50vh] mt-[125px] lg:mt-[96px] xl:mt-[250px] container px-5 mx-auto opacity-0 transition-opacity duration-2000"
+        id="section--1">
+    <div class=" section1-content">
+        <div class="absolute w-[300px] h-[350px] top-[80px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-[30%] blur-[60px] bg-gradient-to-r from-[#51B599] to-[#178AAD] opacity-30"></div>
+        <div class="absolute w-[200px] h-[350px] rounded-[30%] blur-[30px] top-[160px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-30"></div>
+        <h2 class="text-6xl font-bold text-[40px] lg:text-[64px] leading-[87px] text-white text-center mb-6 relative z-[10]">
+            Why TaskFlow?</h2>
+
+        <p class="text-[20px] leading-[28px] text-white text-center mb-[31px] relative z-[10]">
+            TaskFlow is a powerful tool designed to streamline your task management and boost productivity. Whether
+            you're managing a team or tracking personal projects, TaskFlow adapts to your unique workflow, ensuring that
+            you stay organized and focused on what truly matters.
+        </p>
+        <p class="text-[20px] leading-[28px] text-white text-center relative z-[10] ">
+            Say goodbye to chaos and hello to clarity with TaskFlow.
+        </p>
+    </div>
+
+    <div class="absolute bottom-[47%] left-[7%]">
+        <img src="img/ball-1.png" alt="">
+    </div>
+    <div class="absolute top-[1%] right-[7%]">
+        <img src="img/ball-1.png" alt="">
+    </div>
+</section>
+<div class="container mx-auto mt-[150px] px-5">
+    <section
+            class="px-[25px] px-[115px] lg:px-[80px] bg-gradient-to-tr from-[#178AAD] to-[#51B599] rounded-[16px] py-[25px] grid grid-cols-1 lg:grid-cols-2 opacity-0 transition-opacity duration-2000">
+        <div class="max-w-[380px] flex flex-col items-center lg:items-start justify-center z-10 mx-auto lg:mx-0">
+            <h2 class="relative z-10 text-[#101223] text-[40px] leading-[40px] lg:text-left text-center lg:text-[64px] lg:leading-[64px] mb-[24px] font-bold ">
+                Take a glimpse on the app flow
+            </h2>
+            <p class="relative z-10 text-[#101223] text-[16px] leading-[23px] font-bold lg:text-left text-center mb-[60px]">
+                See the power of AI as it personalizes your path and uncovers new opportunities. Don't miss out on this
+                transformative experience.
+            </p>
+        </div>
+        <div class="right-col flex items-center justify-end">
+            <div class="lg:max-w-[100%] relative bg-black rounded-[16px] border-[10px] border-[#4EB39A] w-full xl:w-[580px] flex justify-center items-center">
+                <video class="max-h-[400px]" src="img/xpecies-walkthrough-1%20(1).mp4"></video>
+                <div class="absolute play-btn flex items-center justify-center inset-0 cursor-pointer">
+                    <img src="img/play-btn.png" alt="" id="playBtn">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--    SECTION 3-->
+<section class="mt-[135px] relative h-[120vh] container mx-auto px-5  opacity-0 transition-opacity duration-2000"
+         id="section--2">
+
+    <img class="absolute right-0 bottom-[20%] hidden md:block" src="img/mini-planet.png.png" alt="">
+    <h3 class="leading-[24px] text-[16px] tracking-[1.6px] text-white text-center">THE APP</h3>
+    <h2 class="leading-[87px] text-[40px] lg:text-[64px] text-white text-center font-nunito-sans font-bold mb-[55px]">
+        How it
+        Works</h2>
+    <div class="flex items-center justify-between mx-auto max-w-[800px] " id="slider-navigation-wrapper">
+        <div class="relative cursor-pointer tab active" data-tab='1'>
+            <div class="w-[45px] md:w-[66px] h-[50px] md:h-[66px] border border-[#6B7280] rounded-[16px] flex justify-center items-center z-20 cursor-pointer  transition-all duration-300 ease-in-out">
+                <img class="opacity-50 z-20 transition-opacity duration-300 ease-in-out" src="img/tab-nav-1.svg"
+                     alt="">
+                <div class="absolute top-0 z-10 bg-gradient-to-br from-[#178AAD] to-[#51B599] w-[45px] md:w-[66px] h-[50px] md:h-[66px] blur-[20px] opacity-0 transition-opacity duration-300 ease-in-out"></div>
+            </div>
+
+        </div>
+        <span class="arrow hidden md:block">
+                 <svg class="w-6 h-6 active-svg !text-custom-gray  dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+            </span>
+
+        <div class="relative cursor-pointer tab" data-tab='2'>
+            <div class="w-[45px] md:w-[66px] h-[50px] md:h-[66px] border border-[#6B7280] rounded-[16px] flex justify-center items-center z-10 cursor-pointer  transition-all duration-300 ease-in-out">
+                <img class="opacity-50 z-20 transition-opacity duration-300 ease-in-out" src="img/tab-nav-2.svg"
+                     alt="">
+                <div class="absolute top-0 z-[1] bg-gradient-to-br from-[#178AAD] to-[#51B599] w-[45px] md:w-[66px] h-[50px] md:h-[66px] blur-[20px] opacity-0 transition-opacity duration-300 ease-in-out"></div>
+            </div>
+
+        </div>
+        <span class="arrow hidden md:block">
+                 <svg class="w-6 h-6 active-svg !text-custom-gray  dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+            </span>
+        <div class="relative cursor-pointer tab" data-tab='3'>
+            <div class="w-[45px] md:w-[66px] h-[50px] md:h-[66px] border border-[#6B7280] rounded-[16px] flex justify-center items-center z-10 cursor-pointer  transition-all duration-300 ease-in-out">
+                <img class="opacity-50 z-20 transition-opacity duration-300 ease-in-out" src="img/tab-nav-3.svg"
+                     alt="">
+                <div class="absolute top-0 z-[1] bg-gradient-to-br from-[#178AAD] to-[#51B599] w-[45px] md:w-[66px] h-[50px] md:h-[66px] blur-[20px] opacity-0 transition-opacity duration-300 ease-in-out"></div>
+            </div>
+
+        </div>
+        <span class="arrow hidden md:block">
+                 <svg class="w-6 h-6 active-svg !text-custom-gray  dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+            </span>
+        <div class="relative cursor-pointer tab" data-tab='4'>
+            <div class="w-[45px] md:w-[66px] h-[50px] md:h-[66px] border border-[#6B7280] rounded-[16px] flex justify-center items-center z-10 cursor-pointer  transition-all duration-300 ease-in-out">
+                <img class="opacity-50 z-20 transition-opacity duration-300 ease-in-out" src="img/tab-nav-4.svg"
+                     alt="">
+                <div class="absolute top-0 z-[1] bg-gradient-to-br from-[#178AAD] to-[#51B599] w-[45px] md:w-[66px] h-[50px] md:h-[66px] blur-[20px] opacity-0 transition-opacity duration-300 ease-in-out"></div>
+            </div>
+
+        </div>
+        <span class="arrow hidden md:block">
+                 <svg class="w-6 h-6 active-svg !text-custom-gray dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+            </span>
+        <div class="relative cursor-pointer tab" data-tab='5'>
+            <div class="w-[45px] md:w-[66px] h-[50px] md:h-[66px] border border-[#6B7280] rounded-[16px] flex justify-center items-center z-10 cursor-pointer  transition-all duration-300 ease-in-out">
+                <img class="opacity-50 z-20 transition-opacity duration-300 ease-in-out" src="img/tab-nav-5.svg"
+                     alt="">
+                <div class="absolute top-0 z-[1] bg-gradient-to-br from-[#178AAD] to-[#51B599] w-[45px] md:w-[66px] h-[50px] md:h-[66px] blur-[20px] opacity-0 transition-opacity duration-300 ease-in-out"></div>
+            </div>
+
+        </div>
+        <span class="arrow hidden md:block">
+                 <svg class="w-6 h-6 active-svg !text-custom-gray  dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+            </span>
+        <div class="relative cursor-pointer tab" data-tab='6'>
+            <div class="w-[45px] md:w-[66px] h-[50px] md:h-[66px] border border-[#6B7280] rounded-[16px] flex justify-center items-center z-10 cursor-pointer  transition-all duration-300 ease-in-out">
+                <img class="opacity-50 z-20 transition-opacity duration-300 ease-in-out" src="img/tab-nav-6.svg"
+                     alt="">
+                <div class="absolute top-0 z-[1] bg-gradient-to-br from-[#178AAD] to-[#51B599] w-[45px] md:w-[66px] h-[50px] md:h-[66px] blur-[20px] opacity-0 transition-opacity duration-300 ease-in-out"></div>
+            </div>
+
+        </div>
+    </div>
+    <!--        TAB CONTENT-->
+    <div class="max-w-[400px] mx-auto">
+        <div class="my-[100px] mb-[80px] flex flex-col items-center justify-center tab_content tab_content-1 ">
+            <img src="img/tab-1.png" alt="">
+            <h4 class="text-[20px] font-semibold leading-[28px] mt-[80px] text-white">Registration</h4>
+            <p class="text-[16px] leading-[23px] mt-[22px] text-white text-center max-w-[395px]">Get started by
+                creating your Xpecies account. It's quick,easy.</p>
+        </div>
+        <div class="my-[100px] mb-[80px] flex flex-col items-center justify-center tab_content tab_content-2 hidden">
+            <img src="img/tab-2.png" alt="">
+            <h4 class="text-[20px] font-semibold leading-[28px] mt-[80px] text-white">Self-Assessment</h4>
+            <p class="text-[16px] leading-[23px] mt-[22px] text-white text-center max-w-[395px]">Dive into Xpecies
+                revolutionary self-assessment tool, to uncover your strengths,
+                passions, and aspirations. Brace yourself for a journey of self-discovery that will shape your
+                future.</p>
+        </div>
+
+
+        <div class="my-[100px] mb-[80px] flex flex-col items-center justify-center tab_content tab_content-3 hidden">
+            <img src="img/tab-3.png" alt="">
+            <h4 class="text-[20px] font-semibold leading-[28px] mt-[80px] text-white">Personalized Path</h4>
+            <p class="text-[16px] leading-[23px] mt-[22px] text-white text-center max-w-[395px]">Starting with your
+                self-assessment, Xpecies presents you with personalised path
+                possibilities. Gain insights and receive educational and professional advice tailored to your unique
+                profile.</p>
+        </div>
+        <div class="my-[100px] mb-[80px] flex flex-col items-center justify-center tab_content tab_content-4 hidden">
+            <img src="img/tab-4.png" alt="">
+            <h4 class="text-[20px] font-semibold leading-[28px] mt-[80px] text-white">Challenge Area</h4>
+            <p class="text-[16px] leading-[23px] mt-[22px] text-white text-center max-w-[395px]">Ready to put your
+                skills to the test? Take on challenges that validate and
+                enhance
+                your abilities. As you conquer new challenges, Xpecies algorithm fine-tunes your path advice,
+                ensuring
+                precision and accuracy.</p>
+        </div>
+
+        <div class="my-[100px] mb-[80px] flex flex-col items-center justify-center tab_content tab_content-5 hidden">
+            <img src="img/tab-5.png" alt="">
+            <h4 class="text-[20px] font-semibold leading-[28px] mt-[80px] text-white">Future Of Work</h4>
+            <p class="text-[16px] leading-[23px] mt-[22px] text-white text-center max-w-[395px]">Stay ahead of the
+                curve by diving into the future of work. Use Xpecies AI-powered
+                in-app tool to explore the latest news, trends, and insights to future-proof your career.</p>
+        </div>
+
+        <div class="my-[100px] mb-[80px] flex flex-col items-center justify-center tab_content tab_content-6 hidden">
+            <img src="img/tab-6.png" alt="">
+            <h4 class="text-[20px] font-semibold leading-[28px] mt-[80px] text-white">Initial People Offer
+                (IPO)</h4>
+            <p class="text-[16px] leading-[23px] mt-[22px] text-white text-center max-w-[395px]">When you feel ready
+                to take the next big step, head to the IPO section. Launch
+                yourself to the world, showcasing your skills and unique value proposition.</p>
+        </div>
+    </div>
+</section>
+<!--TEAM SECTION-->
+<section class="min-w-full p-0 my-[150px]  opacity-0 transition-opacity duration-2000" id="section--3">
+    <div class="w-[100%] bg-cover bg-top" style="background-image: url('img/planet-bg.png');">
+        <div class="pt-[180px] container mx-auto px-5">
+            <h3 class="leading-6 text-base tracking-wider text-white text-center">THE TEAM</h3>
+            <h2 class="lg:leading-[87px] lg:text-6xl leading-[40px] text-[40px] text-white text-center  font-bold ">Who
+                is Behind</h2>
+            <p class="text-base leading-[23px] mt-[22px] text-white px-[150px] text-center mb-10">We are a diverse and
+                forward-thinking team, bringing fresh energy to task management. Our new app, TaskFlow, leverages the
+                latest in technology and design to help you streamline your workflow and boost productivity.</p>
+        </div>
+        <div class="grid grid-cols-1 gap-[75px] sm:gap-0 lg:gap-[20px] sm:grid-cols-2 lg:grid-cols-3 lg:px-[150px] container mx-auto px-5 mb-[75px] ">
+            <div class="flex flex-col justify-center items-center bg-transparent cursor-pointer ">
+                <div class="relative flex justify-center items-center group">
+                    <img src="img/team-img.png" alt="">
+                    <div class="w-full h-full bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm rounded-full absolute flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="user-info">
+                    <p class="text-center text-lg leading-7 font-semibold text-white my-5">Jane Doe </p>
+                    <p class="text-center text-base leading-6 font-normal text-gray-300">CMO and Co-founder</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center bg-transparent cursor-pointer">
+                <div class="relative flex justify-center items-center group">
+                    <img src="img/team-img2.png" alt="">
+                    <div class="w-full h-full bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm rounded-full absolute flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="user-info">
+                    <p class="text-center text-lg leading-7 font-semibold text-white my-5">Joe Doe</p>
+                    <p class="text-center text-base leading-6 font-normal text-gray-300">CMO and Co-founder</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center bg-transparent cursor-pointer sm:col-span-3 lg:col-span-1 sm:justify-center sm:items-center sm:mt-[75px] lg:mt-0">
+                <div class="relative flex justify-center items-center group">
+                    <img src="img/team-img3.png" alt="">
+                    <div class="w-full h-full bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm rounded-full absolute flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="user-info">
+                    <p class="text-center text-lg leading-7 font-semibold text-white my-5">Joe Doe</p>
+                    <p class="text-center text-base leading-6 font-normal text-gray-300">CTO</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[75px] lg:gap-[20px] container mx-auto px-5">
+            <div class="flex flex-col justify-center items-center bg-transparent cursor-pointer">
+                <div class="relative flex justify-center items-center group">
+                    <img src="img/team4.png" alt="">
+                    <div class="w-full h-full bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm rounded-full absolute flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="user-info">
+                    <p class="text-center text-lg leading-7 font-semibold text-white my-5">Joe Doe</p>
+                    <p class="text-center text-base leading-6 font-normal text-gray-300">Product Director</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center bg-transparent cursor-pointer">
+                <div class="relative flex justify-center items-center group">
+                    <img src="img/team5.png" alt="">
+                    <div class="w-60 h-60 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm rounded-full absolute flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="user-info">
+                    <p class="text-center text-lg leading-7 font-semibold text-white my-5">Joe Doe</p>
+                    <p class="text-center text-base leading-6 font-normal text-gray-300">Director of Skills Assessment
+                        and Research</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center bg-transparent cursor-pointer">
+                <div class="relative flex justify-center items-center group">
+                    <img src="img/team6.png" alt="">
+                    <div class="w-60 h-60 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm rounded-full absolute flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="user-info">
+                    <p class="text-center text-lg leading-7 font-semibold text-white my-5">Joe Doe</p>
+                    <p class="text-center text-base leading-6 font-normal text-gray-300">Financial Manager</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center bg-transparent cursor-pointer">
+                <div class="relative flex justify-center items-center group">
+                    <img src="img/team7.png" alt="">
+                    <div class="w-60 h-60 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm rounded-full absolute flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="user-info">
+                    <p class="text-center text-lg leading-7 font-semibold text-white my-5">Jane Doe</p>
+                    <p class="text-center text-base leading-6 font-normal text-gray-300">Technical Product Manager</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="container mx-auto px-5 mt-[250px]  opacity-0 transition-opacity duration-2000" id="section--4">
+    <h2 class="lg:text-6xl lg:leading-[87px] text-[40px] leading-[40px] text-white text-center font-bold text-start sm:text-center mb-[50px]">
+        THE INVESTORS</h2>
+    <div class="min-h-[450px] grid grid-cols-1 lg:grid-cols-3 min-w-full gap-[40px]">
+        <div class="relative h-full flex items-end w-full">
+            <div class=" rounded-[4px] overflow-hidden shadow-md">
+                <div class="absolute top-0 h-[320px] w-full bg-gradient-to-br from-[#178AAD] to-[#51B599] opacity-50 blur-[70px] rounded-full z-0"></div>
+                <div class="flex text-center justify-center bg-black/20 h-[200px] relative z-10 p-4">
+                    <img class="object-contain" src="img/loremLogo.svg" alt="investors-1">
+                </div>
+                <div class="text-base leading-6 text-[#D1D5DB] bg-[#101223] text-start py-2 px-4 h-[140px] xl:h-[120px] relative z-10">
+                    We integrate human, technological, and financial resources to streamline task management and
+                    optimize workflows, empowering your team to excel in a global landscape.
+                </div>
+            </div>
+        </div>
+
+        <div class="relative h-full flex items-end w-full">
+            <div class="min-w-[33.33%] rounded-[4px] overflow-hidden shadow-md">
+                <div class="absolute top-0 h-[320px] w-full bg-gradient-to-br from-[#178AAD] to-[#51B599] opacity-50 blur-[70px] rounded-full z-0"></div>
+                <div class="flex text-center justify-center bg-black/20 h-[200px] relative z-10 p-4">
+                    <img class="object-contain" src="img/loremLogo.svg" alt="investors-2">
+                </div>
+                <div class="text-base leading-6 text-[#D1D5DB] bg-[#101223] text-start py-2 px-4 h-[140px] xl:h-[120px] relative z-10">
+                    Harness data-driven insights to unlock and enhance your employees' full potential, driving superior
+                    business outcomes.
+                </div>
+            </div>
+        </div>
+        <div class="relative h-full flex items-end w-full">
+            <div class="min-w-[33.33%] rounded-[4px] overflow-hidden shadow-md">
+                <div class="absolute top-0 h-[320px] w-full bg-gradient-to-br from-[#178AAD] to-[#51B599] opacity-50 blur-[70px] rounded-full z-0"></div>
+                <div class="flex text-center justify-center bg-black/20 h-[200px] relative z-10 p-4">
+                    <img class="object-contain" src="img/loremLogo.svg" alt="investors-3">
+                </div>
+                <div class="text-base leading-6 text-[#D1D5DB] bg-[#101223] text-start py-2 px-4 h-[140px] xl:h-[120px] relative z-10">
+                    Expertise in task management with a cutting-edge approach to optimizing team workflows, enhancing
+                    productivity, and streamlining task allocation for maximum efficiency.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div class="relative bg-[#131625] z-[999999]  " id="section--5">
+    <div class="container mx-auto px-5 mt-[123px] ">
+        <div class="absolute top-[-4%] left-[50%]">
+            <img src="img/ball-1.png" alt="">
+        </div>
+        <div class="absolute right-[17%] bottom-[20%]">
+            <img src="img/ball-1.png" alt="">
+        </div>
+        <div class="absolute left-[17%] bottom-[-3%]">
+            <img src="img/ball-1.png" alt="">
+        </div>
+        <div class="px-4 lg:px-8 2xl:px-0 container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4  flex items-center mt-[96px] lg:mt-[130px] pb-46 relative">
+            <div class="px-0 col-span-12 lg:col-span-4 text-center lg:text-left mb-6 lg:mb-0">
+                <h4 class="text-xl leading-[24px] tracking-widest text-gray-300">THE STORY</h4>
+                <h2 class="text-[40px] lg:text-[64px] leading-[37px] text-white lg:leading-[60px] font-bold">Know Our
+                    Origins</h2>
+                <p class="mt-8 text-gray-300 mb-6">Xpecies is a new startup but already comes
+                    with lots
+                    of experience.</p>
+                <p class="mt-8 text-gray-300 mb-6">The founders bring more than 20 years of experience with
+                    clients such as Nestlé, Swiss Re and Natura,
+                    assessing skills and shaping career and educational paths.</p>
+                <p class="mt-8 text-gray-300 mb-6">Xpecies revolutionises career advising and education,
+                    empowering individuals with boundless
+                    possibilities for professional longevity.</p>
+            </div>
+            <div class="col-span-12 lg:col-span-8 relative h-[275px] sm:h-[420px] md:h-[500px] xl:h-[692px] top-[-17%]">
+                <img src="img/universe4.svg" class="object-cover absolute w-full z-[999998]  ">
+            </div>
+        </div>
+        <div class="relative z-10 mt-[50px]">
+            <div class="absolute bg-gradient-to-br from-[#51B599] to-[#178AAD] h-[400px] w-[250px] rounded-full z-1 filter blur-[80px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="relative z-[999999] text-white">
+                <p class="leading-[23px] flex justify-center text-center px-6 lg:px-[150px]">
+                    "The Digital Academy had a significant impact on our operation. Tamboro's expertise in educational
+                    technology and gamification helped us transform our technical
+                    knowledge into effective digital content. The tool's acceptance was excellent, with over 10,000
+                    completed
+                    training courses and certificates issued. Measurement tools like
+                    NPS and learning quality algorithms validated user satisfaction and return on investment."
+                </p>
+                <p class="mt-6 flex justify-center text-center">
+                    Executive Vice President Brazil and Head of LATAM Distribution
+                </p>
+                <p class="font-bold leading-[23px] flex justify-center text-center">
+                    Swiss Re Corporate Solutions
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-[#131625] relative z-[999998] pt-[135px] " id="section--6">
+    <div class="container grid grid-cols-1 xl:grid-cols-2 pb-[50px] gap-[40px]    mx-auto  mt-[130px] ">
+        <div class="px-4 lg:px-8 xl:px-0 rounded-[30px] overflow-hidden max-h-[480px]">
+            <img class="object-cover h-full max-h-[30rem] w-full" src="img/contact-img.png.jpg" alt="">
+        </div>
+        <div class="flex flex-col justify-center p-[20px]">
+            <h2 class="lg:text-left text-center text-[40px] mb-[42px] font-bold text-white lg:text-[60px] leading-[64px]">
+                Contact Us
+            </h2>
+            <form class="w-full flex flex-col justify-center">
+
+                <input class="w-[100%] mb-[32px] bg-transparent p-2.5 box-border border-b border-gray-300 outline-none text-gray-400 text-base"
+                       type="text"
+                       placeholder="Your name">
+
+
+                <input class="w-[100%] mb-[32px] bg-transparent p-2.5 box-border border-b border-gray-300 outline-none text-gray-400 text-base"
+                       type="email"
+                       placeholder="Your email">
+
+
+                <textarea
+                        class="w-[100%] mb-[32px] bg-transparent p-2.5 box-border border-b border-gray-300 h-[150px] outline-none text-gray-400 text-base"
+                        placeholder="Your message"></textarea>
+
+                <div class="mt-8 relative flex items-center gap-8 z-[5]">
+                    <button class="relative z-[5] cursor-pointer px-8 py-3 w-[200px] border-none rounded bg-gradient-to-r from-[#51B599] to-[#178AAD] transition duration-500 ease-in-out font-semibold text-white cursor-pointer hover:btn-hover-gradient">
+                        Send
+                    </button>
+                    <div class="absolute z-[1] top-0 left-0 w-[200px] h-[48px] bg-gradient-to-br from-[#51B599] to-[#178AAD] rounded-sm filter blur-[50px]">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<div class="mt-0 lg:mt-[-100vh]  ">
+    <div class="h-screen relative z-[2] block hidden lg:block"></div>
+    <footer class="bg-black lg:py-24 static lg:sticky  bottom-0 py-[102px] relative z-[1]">
+        <div class="container mx-auto px-5">
+            <div class="border-b border-gray-800 pb-16">
+                <h5 class="text-white font-semibold text-sm leading-5">Subscribe to newsletter</h5>
+                <p class="text-[#D1D5DB]">Get early access, receive news and exclusive product updates.</p>
+                <form class="mt-4">>
+                    <div class="flex flex-col lg:flex-row items-start gap-4">
+                        <input class="outline-none bg-transparent text-gray-400 text-base py-2  border-b border-gray-800 placeholder-gray-800 placeholder:text-base w-full lg:w-72"
+                               type="text" placeholder="Your name">
+                        <input class=" outline-none bg-transparent text-gray-400 text-base py-2  border-b border-gray-800 placeholder-gray-800 placeholder:text-base w-full lg:w-72"
+                               type="email" placeholder="your@email.com">
+                        <button class=" text-white text-center text-sm leading-5 border-none bg-gray-800 px-6 py-2 rounded-full flex justify-center items-center gap-1.5 ">
+                            Sign up
+                            <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                       viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                      stroke-linejoin="round" stroke-width="2"
+                                                      d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                        </svg>
+                        </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-[65px] grid lg:grid-cols-2 grid-cols-1 lg:h-[200px] gap-4 lg:gap-0">
+                <div class="flex flex-col justify-between h-full order-2 lg:order-1">
+                    <div class="flex flex-col justify-between  h-full">
+                        <a href="#" class="font-extrabold text-white text-[40px]">
+                            TaskFlow
+                        </a>
+                        <p class="text-white lg:self-start self-center lg:text-start text-center">© 2024 TaskFlow,
+                            Developed in Serbia</p>
+
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 order-1 lg:order-2">
+                    <div class="text-gray-300 text-base leading-6 flex flex-col gap-4 lg:gap-0 justify-between h-full">
+                        <nav class="lg:self-start self-center">
+                            <div class="nav-link text-center lg:text-left cursor-pointer" href="#section--1">Why
+                                TaskFlow?
+                            </div>
+                            <div class="nav-link text-center lg:text-left cursor-pointer" href="#section--2">How it
+                                Works
+                            </div>
+                            <div class="nav-link text-center lg:text-left cursor-pointer" href="#section--3">Our Team
+                            </div>
+                            <div class="nav-link text-center lg:text-left cursor-pointer" href="#section--4">Investors
+                            </div>
+                            <div class="nav-link text-center lg:text-left cursor-pointer" href="#section--5">About Us
+                            </div>
+                        </nav>
+                        <div class="block xl:flex gap-2.5">
+                            <div class="text-center lg:text-left">Privacy Policy</div>
+                            <div class="text-center lg:text-left">Terms of Service</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2.5 justify-center lg:justify-start">
+                        <a href="https://www.linkedin.com/in/boris-bogdanovic-99b77a24b/" target="_blank">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                      d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                      clip-rule="evenodd"/>
+                                <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/boris-bogdanovic-99b77a24b/" target="_blank">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                      d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+</div>
+
+<div class="fixed bottom-5 right-5 bg-gradient-to-r from-[#51B599] to-[#178AAD] w-9 h-9 flex justify-center items-center opacity-0 transition-opacity duration-300 ease cursor-pointer rounded-sm z-[9999999]" id="scrollOnTOP">
+    <svg class='relative z-[10] w-6 h-6 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'>
+        <path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m5 15 7-7 7 7' />
+    </svg>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
